@@ -1,5 +1,5 @@
-import { prowPopup } from './Popups'
-import { prowStyle } from './Styles'
+import { councillorsPopup } from './Popups'
+import { councillorsStyle } from './Styles'
 
 const Configuration = {
     Map: {
@@ -15,12 +15,12 @@ const Configuration = {
     DynamicData: 
     [
         {
-            key: 'Public Rights of Way',
-            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=highways:public_rights_of_way&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            key: 'Councillors',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=political:ward&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                onEachFeature: prowPopup,
+                onEachFeature: councillorsPopup,
                 maxZoom: 2,
-                style: prowStyle
+                style: councillorsStyle
             },
             displayOverlay: true,
             visibleByDefault: true 

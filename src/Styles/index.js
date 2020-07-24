@@ -1,13 +1,11 @@
-const prowStyle = {
-    color: '#006d2c',
-    weight: 4,
+const councillorsStyle = {
+    color: '#000000',
+    weight: 5,
     opacity: 1,
     fillColor: '#fec44f',
-    fillOpacity: 0,
-    dashArray: '7,7,7',
-    dashOffset: '0'
+    fillOpacity: 0
 }
 
 export {
-prowStyle
+councillorsStyle
 }
